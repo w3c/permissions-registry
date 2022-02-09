@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Powerful Features Registry
+    </title>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" async class="remove"></script>
+    <script class="remove">
+      // All config options at https://respec.org/docs/
+      var respecConfig = {
+        // Working Groups ids at https://respec.org/w3c/groups/
+        shortName: "permissions-registry",
+        group: "webappsec",
+        specStatus: "DRY",
+        editors: [
+          {
+            name: "Marcos Cáceres",
+            url: "https://www.w3.org/",
+            company: "W3C",
+            companyURL: "https://www.w3.org/",
+            w3cid: "39125",
+          },
+          {
+            name: "Mike Taylor",
+            url: "https://miketaylr.com/posts/",
+            companyURL: "https://google.com/",
+            company: "Google LLC",
+            w3cid: "90704",
+          },
+
+        ],
+        github: {
+          branch: "main",
+          repoURL: "w3c/permissions-registry",
+        },
+        xref: "web-platform",
+      };
+    </script>
+  </head>
+  <body data-cite="permissions permissions-policy">
+    <section id="abstract">
+      <p>
+        This document serves as the official registry of [=powerful features=] of the web platform.
+      </p>
+    </section>
+    <section id="sotd">
+      <p>
+        This is a work on progress.
+      </p>
+    </section>
+    <section>
+      <h2>
+        Powerful features
+      </h2>
+      <p>
+        TBD: Move definition of powerful features from [[[Permissions]]] spec to here.
+      </p>
+    </section>
+    <section>
+      <h2>
+        Powerful features of the Web Platform
+      </h2>
+      <p>
+        This registry lists the [=powerful features=] being standardized for the web platform. It
+        provides a centralized place to find these features. However, this does not imply that
+        [=user agent=] will support every feature. Specifications adding new features to the web
+        platform should add them to this document.
+      </p>
+      <p>
+        As such, the list of features is not exhaustive. It is expected that new features will be
+        added to this document as they are implemented.
+      </p>
+      <p class="note" title="Specifying a powerful feature">
+        Please refer to the [[[Permissions]]] specification for guidance on how to specify a
+        powerful feature.
+      </p>
+      <p>
+        [=Powerful features=] are identified by a unique string token, which is used for
+        integration with the [[[Permissions]]] and [[[Permissions-Policy]]].
+      </p>
+      <aside class="note">
+        <p>
+          Not all permission policy tokens are powerful features (e.g., "sync-xhr"), but every
+          [=powerful feature=] is a [=policy-controlled feature=].
+        </p>
+      </aside>
+      <table class="data">
+        <caption>
+          Powerful features of the Web Platform
+        </caption>
+        <tr>
+          <th>
+            Unique token that identifies the powerful feature
+          </th>
+          <th>
+            Specification that defines the powerful feature
+          </th>
+        </tr>
+        <tr>
+          <td>
+            "accelerometer"
+          </td>
+          <td>
+            [[[accelerometer]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "ambient-light-sensor"
+          </td>
+          <td>
+            [[[ambient-light]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "background-fetch"
+          </td>
+          <td>
+            [[[background-fetch]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "background-sync"
+          </td>
+          <td>
+            [[[web-background-sync]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "bluetooth"
+          </td>
+          <td>
+            [[[web-bluetooth]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "camera"
+          </td>
+          <td>
+            [[[mediacapture-streams]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "display-capture"
+          </td>
+          <td>
+            [[[screen-capture]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "geolocation"
+          </td>
+          <td>
+            [[[geolocation]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "gyroscope"
+          </td>
+          <td>
+            [[[gyroscope]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "magnetometer"
+          </td>
+          <td>
+            [[[magnetometer]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "microphone"
+          </td>
+          <td>
+            [[[mediacapture-streams]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "midi"
+          </td>
+          <td>
+            [[[webmidi]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "nfc"
+          </td>
+          <td>
+            [[[web-nfc]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "notifications"
+          </td>
+          <td>
+            [[[notifications]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "persistent-storage"
+          </td>
+          <td>
+            [[[storage]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "push"
+          </td>
+          <td>
+            [[[push-api]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "screen-wake-lock"
+          </td>
+          <td>
+            [[[screen-wake-lock]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "speaker-selection"
+          </td>
+          <td>
+            [[[audio-output]]]
+          </td>
+        </tr>
+        <tr>
+          <td>
+            "xr-spatial-tracking"
+          </td>
+          <td>
+            [[[webxr]]]
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="conformance"></section>
+  </body>
+</html>
