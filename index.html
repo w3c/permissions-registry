@@ -41,12 +41,14 @@
   <body data-cite="permissions permissions-policy">
     <section id="abstract">
       <p>
-        This document serves as the official registry of [=powerful features=] of the web platform.
+        This document serves as the official registry of [=powerful features=] of the web platform,
+        providing a centralized place to find these features.
       </p>
     </section>
     <section id="sotd">
       <p>
-        This is a work on progress.
+        The list of features in this registry is not exhaustive. It is expected that new features
+        will be added to this document as they are implemented across multiple user agents.
       </p>
     </section>
     <section>
@@ -56,39 +58,32 @@
       <p>
         TBD: Move definition of powerful features from [[[Permissions]]] spec to here.
       </p>
+      <p class="note" title="Specifying a powerful feature">
+        Please refer to the [[[Permissions]]] specification for guidance on how to specify a
+        powerful feature.
+      </p>
     </section>
     <section>
       <h2>
         Powerful features of the Web Platform
       </h2>
       <p>
-        This registry lists the [=powerful features=] being standardized for the web platform. It
-        provides a centralized place to find these features. However, this does not imply that
-        [=user agent=] will support every feature. Specifications adding new features to the web
-        platform should add them to this document.
-      </p>
-      <p>
-        As such, the list of features is not exhaustive. It is expected that new features will be
-        added to this document as they are implemented.
-      </p>
-      <p class="note" title="Specifying a powerful feature">
-        Please refer to the [[[Permissions]]] specification for guidance on how to specify a
-        powerful feature.
-      </p>
-      <p>
         [=Powerful features=] are identified by a unique string token, which is used for
-        integration with the [[[Permissions]]] and [[[Permissions-Policy]]].
+        integration with the [[[Permissions]]] and [[[Permissions-Policy]]] specifications.
       </p>
-      <aside class="note">
+      <aside class="note" title="Permissions and Permissions Policy">
         <p>
           Not all permission policy tokens are powerful features (e.g., "sync-xhr"), but every
           [=powerful feature=] is a [=policy-controlled feature=].
         </p>
       </aside>
+      <aside class="advisement">
+        <p>
+          Being listed in the table below does not imply that [=user agent=] supports a
+          [=powerful feature=].
+        </p>
+      </aside>
       <table class="data">
-        <caption>
-          Powerful features of the Web Platform
-        </caption>
         <tr>
           <th>
             Unique token that identifies the powerful feature
