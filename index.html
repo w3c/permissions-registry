@@ -90,8 +90,12 @@
       </p>
       <aside class="note" title="Permissions and Permissions Policy">
         <p>
-          Not all permission policy tokens are powerful features (e.g., "sync-xhr"), but every
-          [=powerful feature=] is a [=policy-controlled feature=]. Please refer to the
+          Not every [=policy-controlled feature=] is [=powerful features=]. For example,
+          "web-share" is a [=policy-controlled feature=] that is not classified as a [=powerful
+          feature=] because it doesn't require [=express permission=] to be used.
+          However, by design, every [=powerful feature=] is a [=policy-controlled feature=]. For
+          example, "geolocation" is both a [=policy-controlled feature=] and a [=powerful
+          feature=], as it requires [=express permission=] to be used. Please refer to the
           [[[Permissions]]] specification for guidance on how to specify a powerful feature.
         </p>
       </aside>
