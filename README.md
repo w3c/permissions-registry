@@ -1,2 +1,2 @@
-# Powerful features registry
-Registry of known powerful features in the web platform.
+# Permissions registry
+Registry of standardized and provisional permissions and powerful features of the web platform.
