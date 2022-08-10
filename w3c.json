@@ -1,0 +1,9 @@
+{
+  "group": [
+    "wg/webappsec"
+  ],
+  "contacts": [
+    "samuelweiler", "wseltzer", "sideshowbarker"
+  ],
+  "repo-type": "registry"
+}
